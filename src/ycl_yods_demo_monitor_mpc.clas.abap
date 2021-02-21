@@ -159,6 +159,8 @@ lo_property->set_updatable( abap_false ).
 lo_property->set_sortable( abap_false ).
 lo_property->set_nullable( abap_false ).
 lo_property->set_filterable( abap_false ).
+*=== Rahul Sankla add to show the Creation Date to display as only date (Default Date and Time)
+lo_property->/iwbep/if_mgw_odata_annotatabl~create_annotation( 'sap' )->add( EXPORTING iv_key = 'display-format' iv_value = 'Date' ).
 lo_property->/iwbep/if_mgw_odata_annotatabl~create_annotation( 'sap' )->add(
       EXPORTING
         iv_key      = 'unicode'

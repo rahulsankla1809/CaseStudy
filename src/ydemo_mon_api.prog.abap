@@ -66,7 +66,7 @@ CLASS lcl_api_send_json IMPLEMENTATION.
   METHOD process.
 *==== Refresh/Delete the data from the temporary table
     refresh_database_table( ).
-*==== Quesry and store data in monitoring table
+*==== Query and store data in monitoring table
     get_and_store_data( ).
 *==== Prepare the data in JSON format to pass to API
     prepare_json_data( ).
